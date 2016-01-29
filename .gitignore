@@ -1,0 +1,8 @@
+/downloads/
+/Network Trash Folder/
+/Temporary Items/
+.DS_Store
+*.log
+/.AppleDesktop/
+/.AppleDouble/
+/.AppleDB/
