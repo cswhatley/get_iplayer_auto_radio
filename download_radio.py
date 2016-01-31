@@ -49,12 +49,12 @@ with open("/tmp/radio", "r") as radio:
 		# Strip off the Added: tag for new shows
 		if "Added: " in show:
 			show = show[7:]
+		# Generate a timestamp for this operation
+		now = "{:%Y/%m/%d %H:%M:%S.%f}".format(datetime.datetime.now())
 		try:
 			# Extract the pid, name and episode from the show list
 			# <pid>,<name>,<episode>
 			pid, name, episode, *rest = show.strip().split(",")
-			# Generate a timestamp for this operation
-			now = "{:%Y/%m/%d %H:%M:%S.%f}".format(datetime.datetime.now())
 			# Check the pid hasn't already been downloaded
 			if pid not in history:
 				# Iterate over all the keywords we're looking for
