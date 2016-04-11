@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 ###
-# get_iplayer Radio Keyword Scraper by Charles Whatley
+# get_iplayer Radio Keyword Scraper by cswhisper
 #
 # get_iplayer wrapper script to download any radio shows matching one of a list of keywords
 # Add to your crontab to run regularly, history is automatically tracked by get_iplayer
